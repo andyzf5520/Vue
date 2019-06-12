@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    
     <h1>{{ msg }}</h1>
     <h2></h2>
     <ul>
@@ -8,7 +9,7 @@
           href="https://vuejs.org"
           target="_blank"
         >
-          Core Docs
+          Core Docs 公共组件区
         </a>
       </li>
     

@@ -1,7 +1,9 @@
 'use strict'
+
+// 项目主要配置文件 包括监听端口 ,打包路径
 // Template version: 1.3.1
 // see http://vuejs-templates.github.io/webpack for documentation.
-
+// config文件主要是项目相关配置，我们常用的就是当端口冲突时配置监听端口，打包输出路径及命名等
 const path = require('path')
 
 module.exports = {

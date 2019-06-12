@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-   
+    
     <router-view/>
    
   <h1>{{ msg }}</h1>
@@ -11,16 +11,16 @@
 
 <script>
 import hello from './components/HelloWorld'
-import asp from './components/Test'
+import test from './components/Test'
 export default {
   name: 'App',
   data() {
       return {
-          msg:"Hello VUE !"
+          msg:"根组件内容是 Login.Vue ( #App1 )  main中的</login> 组件!"
       }
   },
   comments:{
-      hello,asp
+      hello,test  
   },
   mounted() {
       
@@ -36,5 +36,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: blanchedalmond;
 }
 </style>

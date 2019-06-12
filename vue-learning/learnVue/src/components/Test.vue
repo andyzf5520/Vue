@@ -1,5 +1,5 @@
 <template>
-  <div class="asp">
+  <div class="test">
     <h1>{{ msg }}</h1>
     <h2>跨域访问API</h2>
     <button @click="GetjsonpData" >axios跨域获取数据</button>
@@ -27,7 +27,10 @@
 
   </span> }}</p>
     
-    <!-- <p>{{ reviceDate }}</p> -->
+    <p>4.1  src目录下的 index.html——[主页]
+    index.html如其他html一样，但一般只定义一个空的根节点，在main.js里面定义的实例将挂载在根节点下，内容都通过vue组件来填充
+    
+    </p>
   </div>
    
 </template>
