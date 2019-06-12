@@ -7,7 +7,7 @@
 // 在创建的 routers 对象中， path 配置了路由的路径，component 配置了映射的组件
 
 // 需要注意的是，export default routers 必须写在文件底部，而且后面还需要接一空行，否则无法通过 ESlint 语法验证
-import Home from './components/home.vue'
+import Home from './components/home'
 
 const routers = [{
         path: '/home',
