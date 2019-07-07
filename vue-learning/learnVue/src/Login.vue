@@ -18,7 +18,7 @@
 
 <script>
 import hello from './components/HelloWorld'
-import test from './components/Test'
+import Axios from './components/Axios'
 export default {
   name: 'App',
   data() {
@@ -30,12 +30,9 @@ export default {
       }
   },
   comments:{
-      hello,test  
+      hello,Axios  
   },
-  mounted: {
-      //
-
-  },
+  
   // 计算钩子函数  绑定对原有数据字段的计算值 
   computed:{
    

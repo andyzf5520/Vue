@@ -4,11 +4,14 @@
         <ul>
             <span> <router-link to="/"> Footer 组件 首页 |</router-link></span>
            <span> <router-link to="/manage">manage 管理 | </router-link></span>
-            <span> <router-link to="/test">Test Axios  |</router-link></span>
+            <span> <router-link to="/Axios">Test Axios  |</router-link></span>
          
              <span> <router-link to="/main_helloworld">HelloWorld | </router-link></span>
              <button  class="sign" @click="login" >按钮的跳转不是a标签</button>
               <span> <router-link to="/home">Home 页父子组件  |</router-link></span>
+               <span> <router-link to="/VueResource">VueResource Get Post 请求  |</router-link></span>
+              <hr>
+
         </ul>
         <b>
           Copyright&nbsp;&copy;&nbsp;{{ author }} - 2016 All rights reserved
@@ -37,9 +40,9 @@ export default {
 
     // 2 . 将状态映射到组件
     computed: {
-        author(){
-        //   return  this.$state.author  //
-        }
+        // author(){
+        // //   return  this.$state.author  //
+        // }
     },
 }
 </script>

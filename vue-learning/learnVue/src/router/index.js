@@ -1,24 +1,30 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import test from '@/components/Test'
+import Axios from '@/components/Axios'
 
 import Index from '@/views/index/index'
 import Manage from "@/views/manage/index"
 import Login from '@/Login' // 引入组件
 
 import Home from '@/components/home'
-
+import VueResource from '@/components/VueResource'
 Vue.use(Router)
-
+Vue.use(VueResource)
 export default new Router({
     routes: [
 
 
         {
-            path: '/test',
-            name: 'test',
-            component: test,
+            path: '/axios',
+            name: 'Axois',
+            component: Axios,
+
+        },
+        {
+            path: '/VueResource',
+            name: 'VueResource',
+            component: VueResource,
 
         },
         {
@@ -45,7 +51,7 @@ export default new Router({
         {
             path: '/home1',
             component: Login,
-            　　children: [　　　{　　　　 path: '/', 　　　component: test }　　]
+            　　children: [　　　{　　　　 path: '/', 　　　component: Axios }　　]
         },
 
 
