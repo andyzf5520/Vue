@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+// import HelloWorld from '@/components/HelloWorld'
 import Axios from '@/components/Axios'
 
 import Index from '@/views/index/index'
@@ -8,6 +8,7 @@ import Manage from "@/views/manage/index"
 import Login from '@/Login' // 引入组件
 
 import Home from '@/components/home'
+import Life from '@/components/Life'
 import VueResource from '@/components/VueResource'
 Vue.use(Router)
 Vue.use(VueResource)
@@ -35,7 +36,10 @@ export default new Router({
         {
             path: '/main_helloworld',
             name: 'HelloWorld',
-            component: HelloWorld
+            component: resolve => require(['../components/HelloWorld.vue'], resolve), //直接引用不需要import
+            meta: {
+                title: "Hellow 首页"
+            }
         },
         {
             path: "/manage",
@@ -52,6 +56,12 @@ export default new Router({
             path: '/home1',
             component: Login,
             　　children: [　　　{　　　　 path: '/', 　　　component: Axios }　　]
+        },
+        {
+            path: '/Life',
+            name: 'Life',
+            component: Life,
+
         },
 
 
